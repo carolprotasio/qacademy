@@ -1,11 +1,10 @@
 # Projeto de Testes Automatizados - Cadastro de Deliver
 
-## Introdução
 Este projeto foi desenvolvido com o objetivo de realizar testes automatizados no fluxo de cadastro de entregadores no site [Burger Eats](https://buger-eats-qa.vercel.app/deliver). Durante os testes, foi utilizado um mock para interceptar requisições ao serviço de CEP [ViaCEP](https://viacep.com.br), garantindo maior controle e previsibilidade nos testes.
 Durante os testes, a requisição de busca de CEP é interceptada e substituída por um mock, permitindo testar o fluxo de cadastro sem depender de respostas reais da API externa.
 
 <img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/homepage.png" alt="web" width="600"/>
-<img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/cadstro.png" alt="web" width="600"/>
+<img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/cadastro.png" alt="web" width="600"/>
 
 ## Tecnologias Utilizadas
 - **[Cypress](https://www.cypress.io/):** Framework de testes end-to-end.
@@ -51,7 +50,7 @@ cy.fixture('mockcep').then(function(mockcep){
   - _"Selecione o método de entrega"_
   - _"Adicione uma foto da sua CNH"_
  
-<img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/ct_all_tests.png" alt="web" width="600"/>
+<img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/cy_all_tests.png" alt="web" width="600"/>
  
 ## Como Instalar / Clonar
 1. **Clone o repositório:**
