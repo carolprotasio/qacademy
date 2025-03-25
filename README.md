@@ -6,14 +6,14 @@ Durante os testes, a requisição de busca de CEP é interceptada e substituída
 <img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/homepage.png" alt="web" width="600"/>
 <img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/cadastro.png" alt="web" width="600"/>
 
-## Tecnologias Utilizadas
-- **[Cypress](https://www.cypress.io/):** Framework de testes end-to-end.
-- **JavaScript:** Linguagem utilizada para escrever os testes.
-- **[Cypress File Upload](https://www.npmjs.com/package/cypress-file-upload):** Plugin para simular upload de arquivos.
-- **Node.js:** Ambiente de execução para o Cypress.
-- **Mock de API:** Utilizado para interceptar e simular respostas da API do ViaCEP.
+## 🛠️ Tecnologias Utilizadas
+- **Cypress**
+- **JavaScript**
+- **Cypress File Upload** 
+- **Node.js** 
+- **Mock de API** Utilizado para interceptar e simular respostas da API do ViaCEP.
 
-  Exemplo de código do mock:
+## ⚙️ Exemplo de código do mock:
 ```javascript
 cy.fixture('mockcep').then(function(mockcep){
     cy.intercept('GET', 'https://viacep.com.br/ws/**', {
@@ -23,7 +23,7 @@ cy.fixture('mockcep').then(function(mockcep){
 })
 ```
 
-## Cenários de Teste e casos de testes
+## 🧪 Cenários de Teste e casos de testes
 ### CT-001 - Cadastro de entregador com sucesso
 - Preenche o formulário com dados válidos.
 - Verifica se a mensagem de sucesso é exibida:  
@@ -52,7 +52,7 @@ cy.fixture('mockcep').then(function(mockcep){
  
 <img src="https://github.com/carolprotasio/qacademy/blob/main/cypress/fixtures/images/cy_all_tests.png" alt="web" width="600"/>
  
-## Como Instalar / Clonar
+## 📥 Como Instalar / Clonar
 1. **Clone o repositório:**
    ```bash
    git clone https://github.com/carolprotasio/qacademy.git
@@ -67,5 +67,5 @@ cy.fixture('mockcep').then(function(mockcep){
   ```
 Execute os testes: Escolha o arquivo de teste signup.cy.js na interface do Cypress para rodar os testes.
 
-Conclusão
+✅ Conclusão
 Este projeto demonstra como utilizar o Cypress para criar testes automatizados robustos, com ênfase no uso de mocks para simular APIs externas. Essa abordagem garante que o fluxo de cadastro de entregadores funcione corretamente, mesmo em cenários de erro ou indisponibilidade de serviços externos.
